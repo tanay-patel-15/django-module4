@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enter Details</title>
+</head>
+<body>
+  
+  <form action="details" method="get">
+
+    <p> 
+      Name: <input type="text" name="name"><br><br>
+      Age: <input type="range" min="18" max="120" name="age" oninput="this.nextElementSibling.value = this.value"><output>18</output><br><br>
+    </p>
+    <p>
+      Email: <input type="email"  name="email"><br><br>
+    </p>
+    <p>
+      Town: <input type="text" name="town"><br><br>
+    </p>
+    <p>
+      Major: <input type="text" name="major"> <br> <br>
+    </p>
+    <p>
+      Semester: <select name="semester" id="semester">
+        <option value="Fall">Fall</option>
+        <option value="Spring">Spring</option>
+      </select>
+    </p>
+    <p>
+      Graduation Year: <input type="number" minlength="4"  maxlength="4" name="year">
+    </p>
+    <p>
+      <input type="submit" name="Submit Details">
+    </p>
+
+  </form>
+</body>
+</html>
